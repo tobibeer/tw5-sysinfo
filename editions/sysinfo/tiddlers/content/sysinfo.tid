@@ -1,0 +1,9 @@
+created: 20151126184431334
+creator: Tobias Beer
+modified: 20151126194205634
+tabs: Info Usage Install
+tags: Plugins Macros
+title: sysinfo
+type: text/vnd.tiddlywiki
+
+<<plugin-docs sysinfo>>

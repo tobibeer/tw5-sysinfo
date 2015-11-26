@@ -1,0 +1,8 @@
+title: sysinfo-Install
+
+<<plugin-install sysinfo>>
+
+!! Version History
+
+; 2015-11-26
+: initial release

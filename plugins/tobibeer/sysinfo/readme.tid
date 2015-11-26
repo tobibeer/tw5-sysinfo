@@ -1,0 +1,19 @@
+title: $:/plugins/tobibeer/sysinfo/readme
+
+The plugin $:/plugins/tobibeer/sysinfo provides:
+
+; &lt;&lt;sysinfo scope property>>
+: a macro returning system information from the browser ''window'' object
+
+!! Parameters
+
+; scope
+: a toplevel scope of the window object, allowed are<br>» ''location'', ''navigator'', ''document''
+; property
+: a property to read from the scope, e.g.:<br>» ''location'': `href`, `host`, `pathname`, `protocol`<br>» ''navigator'': `appCodeName`, `language`, `platform`, `userAgent`<br>» ''document'': `contentType`, `domain`, `title`, `lastModified`
+
+!! Example
+
+`<<sysinfo location href>>`
+
+> <<sysinfo location href>>
