@@ -5,3 +5,7 @@ title: sysinfo-Info
 type: text/vnd.tiddlywiki
 
 <$transclude tiddler="$:/plugins/tobibeer/sysinfo/readme" mode="block"/>
+
+!! Inspiration
+
+http://publicsidebar.tiddlyspot.com
