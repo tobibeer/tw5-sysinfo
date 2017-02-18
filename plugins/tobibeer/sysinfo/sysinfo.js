@@ -5,31 +5,6 @@ module-type: macro
 
 <<sysinfo scope property>>, e.g: <<sysinfo location href>>
 
+@preserve
 \*/
-(function(){
-
-/*jslint node: true, browser: true */
-/*global $tw: false */
-"use strict";
-
-exports.name = "sysinfo";
-
-exports.params = [
-	{name: "scope"},
-	{name: "property"}	
-];
-/*
-Run the macro
-*/
-
-exports.run = function(scope, property) {
-	if(["document", "location", "navigator"].indexOf(scope) >= 0) {
-		try {
-			return window[scope][property].toString();
-		} catch(e) {
-			//ignore
-		}
-	}
-};
-
-})();
+(function(){"use strict";exports.name="sysinfo";exports.params=[{name:"scope"},{name:"property"}];exports.run=function(n,e){if(["env","document","location","navigator"].indexOf(n)>=0){if(n==="env"){return $tw.browser?"browser":$tw.node?"node":"unknown"}else{try{return window[n][e].toString()}catch(o){}}}}})();

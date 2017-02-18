@@ -3,11 +3,14 @@ creator: Tobias Beer
 modified: 20160107113950907
 modifier: Tobias Beer
 summary: usage and examples of the [[sysinfo]] macro
-tags: 
 title: sysinfo-Usage
 type: text/vnd.tiddlywiki
 
-This example demonstrates how to show content depending on whether we're local or over the web:
+To test whether you're in a node or browser environment, use:
+
+<$macrocall $name="`" text="""<<sysinfo env>>"""/>
+
+The next example demonstrates how to show content depending on whether we're local or over the web:
 
 <$macrocall $name="`" text="""<$vars host=<<sysinfo location href>>>
 
